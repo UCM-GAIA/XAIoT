@@ -54,16 +54,16 @@
         <ObjectProperty IRI="#grouped_by"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#has_concurrentness"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#has_portability"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#has_presentation"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="#has_scope"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_applied"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_portable"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#outputs"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#solves"/>
@@ -72,10 +72,22 @@
         <ObjectProperty IRI="#uses"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#ANFIS"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ada-WHIPS"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#AnomalyDetection"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Apparent_Flow-Net"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Assistance"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Attention_Maps"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#AutomatedManoeuvring"/>
@@ -90,25 +102,91 @@
         <NamedIndividual IRI="#BusinessManagement"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#CAM"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CART"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CBIR"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CGP"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CIT2FS"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CTree"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CaseBasedReasoning"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Classification"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Concept_Attribution"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#CyberAttacksDetection"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#DIFFI"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#DecisionSupport"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Decision_Tree"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Deep-SHAP"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ELIS"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Encoder_Decoder"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#EnergyEnvironment"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Ensemble"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Environment"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FDE"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FFT"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#FacialRecognition"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Feature_Importance"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Fuzzy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#GSX"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Grad-Cam"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Healthcare"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HihO"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#IG"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#ImageProcessing"/>
@@ -123,7 +201,34 @@
         <NamedIndividual IRI="#InstrusionDetection"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#J48"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#KSL"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LIME"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LORE"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Modelling"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NeuralNetwork"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Neuro-Fuzzy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OC-Tree"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ontological_Perturbation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PDP"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#PredictiveMaintenance"/>
@@ -132,13 +237,43 @@
         <NamedIndividual IRI="#PredictiveProcessMonitoring"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Prescience"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#QMC"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RBIA"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RISE"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RPART"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Recommendation"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Regression"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#RetainVis"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#RiskPrediction"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RuleFit"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SHAP"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SIDU"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Saliency_Maps"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Security"/>
@@ -147,7 +282,22 @@
         <NamedIndividual IRI="#SmartAgriculture"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#TRUST"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Transportation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tree-based"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Unsorted"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#XAI360"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#XRAI"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#ante-hoc"/>
@@ -157,6 +307,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#global"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#iNNvestigate"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#local"/>
@@ -180,18 +333,43 @@
         <NamedIndividual IRI="#rules"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#t-SNE"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#text"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#visualisation"/>
     </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#xDNN"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ALMNo-0*"/>
+    </Declaration>
+    <ClassAssertion>
+        <Class IRI="#XAIMethod"/>
+        <NamedIndividual IRI="#ANFIS"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#XAIMethod"/>
+        <NamedIndividual IRI="#Ada-WHIPS"/>
+    </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#AITask"/>
         <NamedIndividual IRI="#AnomalyDetection"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#XAIMethod"/>
+        <NamedIndividual IRI="#Apparent_Flow-Net"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#AITask"/>
         <NamedIndividual IRI="#Assistance"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#XAIMethod"/>
+        <NamedIndividual IRI="#Attention_Maps"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#AITask"/>
@@ -210,32 +388,120 @@
         <NamedIndividual IRI="#BusinessManagement"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#XAIMethod"/>
+        <NamedIndividual IRI="#CAM"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#XAIMethod"/>
+        <NamedIndividual IRI="#CART"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#XAIMethod"/>
+        <NamedIndividual IRI="#CBIR"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#XAIMethod"/>
+        <NamedIndividual IRI="#CGP"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#XAIMethod"/>
+        <NamedIndividual IRI="#CIT2FS"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#XAIMethod"/>
+        <NamedIndividual IRI="#CTree"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AIModel"/>
+        <NamedIndividual IRI="#CaseBasedReasoning"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#AIProblem"/>
         <NamedIndividual IRI="#Classification"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#XAIMethod"/>
+        <NamedIndividual IRI="#Concept_Attribution"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#AITask"/>
         <NamedIndividual IRI="#CyberAttacksDetection"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#XAIMethod"/>
+        <NamedIndividual IRI="#DIFFI"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#AITask"/>
         <NamedIndividual IRI="#DecisionSupport"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#XAIMethod"/>
+        <NamedIndividual IRI="#Decision_Tree"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#XAIMethod"/>
+        <NamedIndividual IRI="#Deep-SHAP"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#XAIMethod"/>
+        <NamedIndividual IRI="#ELIS"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#XAIMethod"/>
+        <NamedIndividual IRI="#Encoder_Decoder"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Domain"/>
         <NamedIndividual IRI="#EnergyEnvironment"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#AIModel"/>
+        <NamedIndividual IRI="#Ensemble"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Domain"/>
         <NamedIndividual IRI="#Environment"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#XAIMethod"/>
+        <NamedIndividual IRI="#FDE"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#XAIMethod"/>
+        <NamedIndividual IRI="#FFT"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#AITask"/>
         <NamedIndividual IRI="#FacialRecognition"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#XAIMethod"/>
+        <NamedIndividual IRI="#Feature_Importance"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AIModel"/>
+        <NamedIndividual IRI="#Fuzzy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#XAIMethod"/>
+        <NamedIndividual IRI="#GSX"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#XAIMethod"/>
+        <NamedIndividual IRI="#Grad-Cam"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Domain"/>
         <NamedIndividual IRI="#Healthcare"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#XAIMethod"/>
+        <NamedIndividual IRI="#HihO"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#XAIMethod"/>
+        <NamedIndividual IRI="#IG"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#AITask"/>
@@ -254,8 +520,44 @@
         <NamedIndividual IRI="#InstrusionDetection"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#XAIMethod"/>
+        <NamedIndividual IRI="#J48"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#XAIMethod"/>
+        <NamedIndividual IRI="#KSL"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#XAIMethod"/>
+        <NamedIndividual IRI="#LIME"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#XAIMethod"/>
+        <NamedIndividual IRI="#LORE"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#AITask"/>
         <NamedIndividual IRI="#Modelling"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AIModel"/>
+        <NamedIndividual IRI="#NeuralNetwork"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AIModel"/>
+        <NamedIndividual IRI="#Neuro-Fuzzy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#XAIMethod"/>
+        <NamedIndividual IRI="#OC-Tree"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#XAIMethod"/>
+        <NamedIndividual IRI="#Ontological_Perturbation"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#XAIMethod"/>
+        <NamedIndividual IRI="#PDP"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#AITask"/>
@@ -266,6 +568,26 @@
         <NamedIndividual IRI="#PredictiveProcessMonitoring"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#XAIMethod"/>
+        <NamedIndividual IRI="#Prescience"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#XAIMethod"/>
+        <NamedIndividual IRI="#QMC"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#XAIMethod"/>
+        <NamedIndividual IRI="#RBIA"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#XAIMethod"/>
+        <NamedIndividual IRI="#RISE"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#XAIMethod"/>
+        <NamedIndividual IRI="#RPART"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#AITask"/>
         <NamedIndividual IRI="#Recommendation"/>
     </ClassAssertion>
@@ -274,8 +596,28 @@
         <NamedIndividual IRI="#Regression"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#XAIMethod"/>
+        <NamedIndividual IRI="#RetainVis"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#AITask"/>
         <NamedIndividual IRI="#RiskPrediction"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#XAIMethod"/>
+        <NamedIndividual IRI="#RuleFit"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#XAIMethod"/>
+        <NamedIndividual IRI="#SHAP"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#XAIMethod"/>
+        <NamedIndividual IRI="#SIDU"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#XAIMethod"/>
+        <NamedIndividual IRI="#Saliency_Maps"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Domain"/>
@@ -286,8 +628,28 @@
         <NamedIndividual IRI="#SmartAgriculture"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#XAIMethod"/>
+        <NamedIndividual IRI="#TRUST"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Domain"/>
         <NamedIndividual IRI="#Transportation"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AIModel"/>
+        <NamedIndividual IRI="#Tree-based"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AIModel"/>
+        <NamedIndividual IRI="#Unsorted"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#XAIMethod"/>
+        <NamedIndividual IRI="#XAI360"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#XAIMethod"/>
+        <NamedIndividual IRI="#XRAI"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Concurrentness"/>
@@ -300,6 +662,10 @@
     <ClassAssertion>
         <Class IRI="#Scope"/>
         <NamedIndividual IRI="#global"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#XAIMethod"/>
+        <NamedIndividual IRI="#iNNvestigate"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Scope"/>
@@ -330,12 +696,24 @@
         <NamedIndividual IRI="#rules"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#XAIMethod"/>
+        <NamedIndividual IRI="#t-SNE"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#OutputFormat"/>
         <NamedIndividual IRI="#text"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#OutputFormat"/>
         <NamedIndividual IRI="#visualisation"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#XAIMethod"/>
+        <NamedIndividual IRI="#xDNN"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#XAIMethod"/>
+        <NamedIndividual IRI="#ALMNo-0*"/>
     </ClassAssertion>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#explained_by"/>
@@ -346,19 +724,19 @@
         <Class IRI="#AITask"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#has_concurrentness"/>
-        <Class IRI="#XAIMethod"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#has_portability"/>
-        <Class IRI="#XAIMethod"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#has_presentation"/>
-        <Class IRI="#XAIMethod"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
         <ObjectProperty IRI="#has_scope"/>
+        <Class IRI="#XAIMethod"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#is_applied"/>
+        <Class IRI="#XAIMethod"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#is_portable"/>
+        <Class IRI="#XAIMethod"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#outputs"/>
         <Class IRI="#XAIMethod"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
@@ -378,20 +756,20 @@
         <Class IRI="#Domain"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#has_concurrentness"/>
+        <ObjectProperty IRI="#has_scope"/>
+        <Class IRI="#Scope"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#is_applied"/>
         <Class IRI="#Concurrentness"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#has_portability"/>
+        <ObjectProperty IRI="#is_portable"/>
         <Class IRI="#Portability"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#has_presentation"/>
+        <ObjectProperty IRI="#outputs"/>
         <Class IRI="#OutputFormat"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#has_scope"/>
-        <Class IRI="#Scope"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#solves"/>
