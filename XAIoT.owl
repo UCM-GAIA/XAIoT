@@ -657,10 +657,6 @@
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Scope"/>
-        <NamedIndividual IRI="#cohort"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Scope"/>
         <NamedIndividual IRI="#global"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -674,10 +670,6 @@
     <ClassAssertion>
         <Class IRI="#Portability"/>
         <NamedIndividual IRI="#model-agnostic"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Portability"/>
-        <NamedIndividual IRI="#model-class-specific"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Portability"/>
