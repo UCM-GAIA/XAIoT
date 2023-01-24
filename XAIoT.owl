@@ -33,7 +33,7 @@
         <Class IRI="#Concurrentness"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Domain"/>
+        <Class IRI="#IoTDomain"/>
     </Declaration>
     <Declaration>
         <Class IRI="#OutputFormat"/>
@@ -51,10 +51,19 @@
         <ObjectProperty IRI="#explained_by"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#explains"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#grouped_by"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#groups"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#has_scope"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isUsedBy"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#is_applied"/>
@@ -144,13 +153,13 @@
         <NamedIndividual IRI="#Deep-SHAP"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#ELIS"/>
+        <NamedIndividual IRI="#ELI5"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Encoder_Decoder"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#EnergyEnvironment"/>
+        <NamedIndividual IRI="#EnergyManagement"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Ensemble"/>
@@ -303,9 +312,6 @@
         <NamedIndividual IRI="#ante-hoc"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#cohort"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="#global"/>
     </Declaration>
     <Declaration>
@@ -316,9 +322,6 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#model-agnostic"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#model-class-specific"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#model-specific"/>
@@ -380,7 +383,7 @@
         <NamedIndividual IRI="#AutonomousProcess_Robotics"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Domain"/>
+        <Class IRI="#IoTDomain"/>
         <NamedIndividual IRI="#Aviation"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -445,22 +448,22 @@
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#XAIMethod"/>
-        <NamedIndividual IRI="#ELIS"/>
+        <NamedIndividual IRI="#ELI5"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#XAIMethod"/>
         <NamedIndividual IRI="#Encoder_Decoder"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Domain"/>
-        <NamedIndividual IRI="#EnergyEnvironment"/>
+        <Class IRI="#IoTDomain"/>
+        <NamedIndividual IRI="#EnergyManagement"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#AIModel"/>
         <NamedIndividual IRI="#Ensemble"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Domain"/>
+        <Class IRI="#IoTDomain"/>
         <NamedIndividual IRI="#Environment"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -492,7 +495,7 @@
         <NamedIndividual IRI="#Grad-Cam"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Domain"/>
+        <Class IRI="#IoTDomain"/>
         <NamedIndividual IRI="#Healthcare"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -512,7 +515,7 @@
         <NamedIndividual IRI="#ImproveProcessQuality"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Domain"/>
+        <Class IRI="#IoTDomain"/>
         <NamedIndividual IRI="#Industry"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -620,11 +623,11 @@
         <NamedIndividual IRI="#Saliency_Maps"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Domain"/>
+        <Class IRI="#IoTDomain"/>
         <NamedIndividual IRI="#Security"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Domain"/>
+        <Class IRI="#IoTDomain"/>
         <NamedIndividual IRI="#SmartAgriculture"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -632,7 +635,7 @@
         <NamedIndividual IRI="#TRUST"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Domain"/>
+        <Class IRI="#IoTDomain"/>
         <NamedIndividual IRI="#Transportation"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -707,17 +710,509 @@
         <Class IRI="#XAIMethod"/>
         <NamedIndividual IRI="#ALMNo-0*"/>
     </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_scope"/>
+        <NamedIndividual IRI="#ANFIS"/>
+        <NamedIndividual IRI="#global"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_scope"/>
+        <NamedIndividual IRI="#ANFIS"/>
+        <NamedIndividual IRI="#local"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#explains"/>
+        <NamedIndividual IRI="#Ada-WHIPS"/>
+        <NamedIndividual IRI="#Ensemble"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_scope"/>
+        <NamedIndividual IRI="#Ada-WHIPS"/>
+        <NamedIndividual IRI="#local"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#grouped_by"/>
+        <NamedIndividual IRI="#AnomalyDetection"/>
+        <NamedIndividual IRI="#Healthcare"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#uses"/>
+        <NamedIndividual IRI="#AnomalyDetection"/>
+        <NamedIndividual IRI="#Ensemble"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_scope"/>
+        <NamedIndividual IRI="#Apparent_Flow-Net"/>
+        <NamedIndividual IRI="#local"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#grouped_by"/>
+        <NamedIndividual IRI="#Assistance"/>
+        <NamedIndividual IRI="#Transportation"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#uses"/>
+        <NamedIndividual IRI="#Assistance"/>
+        <NamedIndividual IRI="#NeuralNetwork"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#explains"/>
+        <NamedIndividual IRI="#Attention_Maps"/>
+        <NamedIndividual IRI="#NeuralNetwork"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_scope"/>
+        <NamedIndividual IRI="#Attention_Maps"/>
+        <NamedIndividual IRI="#local"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#grouped_by"/>
+        <NamedIndividual IRI="#AutomatedManoeuvring"/>
+        <NamedIndividual IRI="#Aviation"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#grouped_by"/>
+        <NamedIndividual IRI="#AutonomousProcess_Robotics"/>
+        <NamedIndividual IRI="#Industry"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#grouped_by"/>
+        <NamedIndividual IRI="#BusinessManagement"/>
+        <NamedIndividual IRI="#Industry"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_scope"/>
+        <NamedIndividual IRI="#CAM"/>
+        <NamedIndividual IRI="#global"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_scope"/>
+        <NamedIndividual IRI="#CART"/>
+        <NamedIndividual IRI="#local"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_scope"/>
+        <NamedIndividual IRI="#CGP"/>
+        <NamedIndividual IRI="#global"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_scope"/>
+        <NamedIndividual IRI="#CIT2FS"/>
+        <NamedIndividual IRI="#local"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_scope"/>
+        <NamedIndividual IRI="#CTree"/>
+        <NamedIndividual IRI="#local"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#explained_by"/>
+        <NamedIndividual IRI="#CaseBasedReasoning"/>
+        <NamedIndividual IRI="#RBIA"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isUsedBy"/>
+        <NamedIndividual IRI="#CaseBasedReasoning"/>
+        <NamedIndividual IRI="#DecisionSupport"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_scope"/>
+        <NamedIndividual IRI="#Concept_Attribution"/>
+        <NamedIndividual IRI="#global"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_scope"/>
+        <NamedIndividual IRI="#Concept_Attribution"/>
+        <NamedIndividual IRI="#local"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#grouped_by"/>
+        <NamedIndividual IRI="#CyberAttacksDetection"/>
+        <NamedIndividual IRI="#Security"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_scope"/>
+        <NamedIndividual IRI="#DIFFI"/>
+        <NamedIndividual IRI="#global"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#grouped_by"/>
+        <NamedIndividual IRI="#DecisionSupport"/>
+        <NamedIndividual IRI="#Environment"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#grouped_by"/>
+        <NamedIndividual IRI="#DecisionSupport"/>
+        <NamedIndividual IRI="#Healthcare"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#grouped_by"/>
+        <NamedIndividual IRI="#DecisionSupport"/>
+        <NamedIndividual IRI="#SmartAgriculture"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#uses"/>
+        <NamedIndividual IRI="#DecisionSupport"/>
+        <NamedIndividual IRI="#Ensemble"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#uses"/>
+        <NamedIndividual IRI="#DecisionSupport"/>
+        <NamedIndividual IRI="#NeuralNetwork"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#explains"/>
+        <NamedIndividual IRI="#Decision_Tree"/>
+        <NamedIndividual IRI="#Ensemble"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_scope"/>
+        <NamedIndividual IRI="#Decision_Tree"/>
+        <NamedIndividual IRI="#global"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_scope"/>
+        <NamedIndividual IRI="#Decision_Tree"/>
+        <NamedIndividual IRI="#local"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_scope"/>
+        <NamedIndividual IRI="#Deep-SHAP"/>
+        <NamedIndividual IRI="#global"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_scope"/>
+        <NamedIndividual IRI="#Deep-SHAP"/>
+        <NamedIndividual IRI="#local"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_scope"/>
+        <NamedIndividual IRI="#ELI5"/>
+        <NamedIndividual IRI="#global"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_scope"/>
+        <NamedIndividual IRI="#ELI5"/>
+        <NamedIndividual IRI="#local"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_scope"/>
+        <NamedIndividual IRI="#Encoder_Decoder"/>
+        <NamedIndividual IRI="#local"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#explained_by"/>
+        <NamedIndividual IRI="#Ensemble"/>
+        <NamedIndividual IRI="#Ada-WHIPS"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#explained_by"/>
+        <NamedIndividual IRI="#Ensemble"/>
+        <NamedIndividual IRI="#LIME"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#explained_by"/>
+        <NamedIndividual IRI="#Ensemble"/>
+        <NamedIndividual IRI="#PDP"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isUsedBy"/>
+        <NamedIndividual IRI="#Ensemble"/>
+        <NamedIndividual IRI="#AnomalyDetection"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isUsedBy"/>
+        <NamedIndividual IRI="#Ensemble"/>
+        <NamedIndividual IRI="#DecisionSupport"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_scope"/>
+        <NamedIndividual IRI="#FDE"/>
+        <NamedIndividual IRI="#global"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_scope"/>
+        <NamedIndividual IRI="#FDE"/>
+        <NamedIndividual IRI="#local"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_scope"/>
+        <NamedIndividual IRI="#FFT"/>
+        <NamedIndividual IRI="#local"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#grouped_by"/>
+        <NamedIndividual IRI="#FacialRecognition"/>
+        <NamedIndividual IRI="#Security"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_scope"/>
+        <NamedIndividual IRI="#Feature_Importance"/>
+        <NamedIndividual IRI="#global"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_scope"/>
+        <NamedIndividual IRI="#Feature_Importance"/>
+        <NamedIndividual IRI="#local"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#explains"/>
+        <NamedIndividual IRI="#Grad-Cam"/>
+        <NamedIndividual IRI="#NeuralNetwork"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_scope"/>
+        <NamedIndividual IRI="#Grad-Cam"/>
+        <NamedIndividual IRI="#global"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_scope"/>
+        <NamedIndividual IRI="#Grad-Cam"/>
+        <NamedIndividual IRI="#local"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_scope"/>
+        <NamedIndividual IRI="#HihO"/>
+        <NamedIndividual IRI="#global"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_scope"/>
+        <NamedIndividual IRI="#IG"/>
+        <NamedIndividual IRI="#local"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#grouped_by"/>
+        <NamedIndividual IRI="#ImageProcessing"/>
+        <NamedIndividual IRI="#Transportation"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#grouped_by"/>
+        <NamedIndividual IRI="#ImproveProcessQuality"/>
+        <NamedIndividual IRI="#Industry"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#grouped_by"/>
+        <NamedIndividual IRI="#InstrusionDetection"/>
+        <NamedIndividual IRI="#Security"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_scope"/>
+        <NamedIndividual IRI="#J48"/>
+        <NamedIndividual IRI="#local"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#explains"/>
+        <NamedIndividual IRI="#LIME"/>
+        <NamedIndividual IRI="#Ensemble"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_scope"/>
+        <NamedIndividual IRI="#LIME"/>
+        <NamedIndividual IRI="#local"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_scope"/>
+        <NamedIndividual IRI="#LORE"/>
+        <NamedIndividual IRI="#local"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#grouped_by"/>
+        <NamedIndividual IRI="#Modelling"/>
+        <NamedIndividual IRI="#Industry"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#explained_by"/>
+        <NamedIndividual IRI="#NeuralNetwork"/>
+        <NamedIndividual IRI="#Attention_Maps"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#explained_by"/>
+        <NamedIndividual IRI="#NeuralNetwork"/>
+        <NamedIndividual IRI="#Decision_Tree"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#explained_by"/>
+        <NamedIndividual IRI="#NeuralNetwork"/>
+        <NamedIndividual IRI="#Grad-Cam"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isUsedBy"/>
+        <NamedIndividual IRI="#NeuralNetwork"/>
+        <NamedIndividual IRI="#DecisionSupport"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_scope"/>
+        <NamedIndividual IRI="#OC-Tree"/>
+        <NamedIndividual IRI="#global"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_scope"/>
+        <NamedIndividual IRI="#Ontological_Perturbation"/>
+        <NamedIndividual IRI="#local"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#explains"/>
+        <NamedIndividual IRI="#PDP"/>
+        <NamedIndividual IRI="#Ensemble"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_scope"/>
+        <NamedIndividual IRI="#PDP"/>
+        <NamedIndividual IRI="#global"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#grouped_by"/>
+        <NamedIndividual IRI="#PredictiveMaintenance"/>
+        <NamedIndividual IRI="#Aviation"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#grouped_by"/>
+        <NamedIndividual IRI="#PredictiveProcessMonitoring"/>
+        <NamedIndividual IRI="#Industry"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_scope"/>
+        <NamedIndividual IRI="#Prescience"/>
+        <NamedIndividual IRI="#local"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_scope"/>
+        <NamedIndividual IRI="#QMC"/>
+        <NamedIndividual IRI="#global"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#explains"/>
+        <NamedIndividual IRI="#RBIA"/>
+        <NamedIndividual IRI="#CaseBasedReasoning"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_scope"/>
+        <NamedIndividual IRI="#RBIA"/>
+        <NamedIndividual IRI="#local"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_portable"/>
+        <NamedIndividual IRI="#RBIA"/>
+        <NamedIndividual IRI="#post-hoc"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_scope"/>
+        <NamedIndividual IRI="#RISE"/>
+        <NamedIndividual IRI="#local"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_scope"/>
+        <NamedIndividual IRI="#RPART"/>
+        <NamedIndividual IRI="#local"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#grouped_by"/>
+        <NamedIndividual IRI="#Recommendation"/>
+        <NamedIndividual IRI="#Environment"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_scope"/>
+        <NamedIndividual IRI="#RetainVis"/>
+        <NamedIndividual IRI="#local"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#grouped_by"/>
+        <NamedIndividual IRI="#RiskPrediction"/>
+        <NamedIndividual IRI="#Healthcare"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_scope"/>
+        <NamedIndividual IRI="#RuleFit"/>
+        <NamedIndividual IRI="#global"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_scope"/>
+        <NamedIndividual IRI="#SHAP"/>
+        <NamedIndividual IRI="#global"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_scope"/>
+        <NamedIndividual IRI="#SHAP"/>
+        <NamedIndividual IRI="#local"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_scope"/>
+        <NamedIndividual IRI="#SIDU"/>
+        <NamedIndividual IRI="#local"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_scope"/>
+        <NamedIndividual IRI="#Saliency_Maps"/>
+        <NamedIndividual IRI="#local"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_scope"/>
+        <NamedIndividual IRI="#TRUST"/>
+        <NamedIndividual IRI="#local"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_scope"/>
+        <NamedIndividual IRI="#XAI360"/>
+        <NamedIndividual IRI="#global"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_scope"/>
+        <NamedIndividual IRI="#XAI360"/>
+        <NamedIndividual IRI="#local"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_scope"/>
+        <NamedIndividual IRI="#XRAI"/>
+        <NamedIndividual IRI="#local"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_scope"/>
+        <NamedIndividual IRI="#iNNvestigate"/>
+        <NamedIndividual IRI="#global"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_scope"/>
+        <NamedIndividual IRI="#iNNvestigate"/>
+        <NamedIndividual IRI="#local"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_scope"/>
+        <NamedIndividual IRI="#xDNN"/>
+        <NamedIndividual IRI="#global"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_scope"/>
+        <NamedIndividual IRI="#ALMNo-0*"/>
+        <NamedIndividual IRI="#global"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_scope"/>
+        <NamedIndividual IRI="#ALMNo-0*"/>
+        <NamedIndividual IRI="#local"/>
+    </ObjectPropertyAssertion>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#explained_by"/>
         <Class IRI="#AIModel"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#explains"/>
+        <Class IRI="#XAIMethod"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#grouped_by"/>
         <Class IRI="#AITask"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#groups"/>
+        <Class IRI="#IoTDomain"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#has_scope"/>
         <Class IRI="#XAIMethod"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isUsedBy"/>
+        <Class IRI="#AIModel"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#is_applied"/>
@@ -744,12 +1239,20 @@
         <Class IRI="#XAIMethod"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="#explains"/>
+        <Class IRI="#AIModel"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="#grouped_by"/>
-        <Class IRI="#Domain"/>
+        <Class IRI="#IoTDomain"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#has_scope"/>
         <Class IRI="#Scope"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isUsedBy"/>
+        <Class IRI="#AITask"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#is_applied"/>
@@ -793,8 +1296,8 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Domain</IRI>
-        <Literal>Field where the problem is involved</Literal>
+        <IRI>#IoTDomain</IRI>
+        <Literal>Domain applied to IoT</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
