@@ -33,6 +33,9 @@
         <Class IRI="#Concurrentness"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#InputFormat"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#IoTDomain"/>
     </Declaration>
     <Declaration>
@@ -58,6 +61,9 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#groups"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_input"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#has_scope"/>
@@ -327,9 +333,6 @@
         <NamedIndividual IRI="#model-agnostic"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#model-class-specific"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="#model-specific"/>
     </Declaration>
     <Declaration>
@@ -685,12 +688,20 @@
         <NamedIndividual IRI="#model-specific"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#InputFormat"/>
+        <NamedIndividual IRI="#numeric"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#OutputFormat"/>
         <NamedIndividual IRI="#numeric"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Concurrentness"/>
         <NamedIndividual IRI="#post-hoc"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#InputFormat"/>
+        <NamedIndividual IRI="#rules"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#OutputFormat"/>
@@ -701,8 +712,16 @@
         <NamedIndividual IRI="#t-SNE"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#InputFormat"/>
+        <NamedIndividual IRI="#text"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#OutputFormat"/>
         <NamedIndividual IRI="#text"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#InputFormat"/>
+        <NamedIndividual IRI="#visualisation"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#OutputFormat"/>
@@ -731,6 +750,10 @@
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#groups"/>
         <Class IRI="#IoTDomain"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_input"/>
+        <Class IRI="#XAIMethod"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#has_scope"/>
@@ -775,6 +798,10 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="#groups"/>
         <Class IRI="#AITask"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_input"/>
+        <Class IRI="#InputFormat"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#has_scope"/>
