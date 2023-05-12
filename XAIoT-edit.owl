@@ -30,7 +30,7 @@
         <Class IRI="#AITask"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Concurrentness"/>
+        <Class IRI="#Concurrence"/>
     </Declaration>
     <Declaration>
         <Class IRI="#InputFormat"/>
@@ -316,9 +316,6 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#ante-hoc"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#cohort"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#global"/>
@@ -664,7 +661,7 @@
         <NamedIndividual IRI="#XRAI"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Concurrentness"/>
+        <Class IRI="#Concurrence"/>
         <NamedIndividual IRI="#ante-hoc"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -696,7 +693,7 @@
         <NamedIndividual IRI="#numeric"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Concurrentness"/>
+        <Class IRI="#Concurrence"/>
         <NamedIndividual IRI="#post-hoc"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -813,7 +810,7 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#is_applied"/>
-        <Class IRI="#Concurrentness"/>
+        <Class IRI="#Concurrence"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#is_portable"/>
@@ -848,7 +845,7 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Concurrentness</IRI>
+        <IRI>#Concurrence</IRI>
         <Literal>It indicates if the XAI method uses the AI Model knowledge (ante-hoc) or if the XAI Method is totally independant of the AI Model</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
